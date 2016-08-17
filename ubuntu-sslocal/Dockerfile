@@ -16,7 +16,7 @@ ENV DNS_ADDR    8.8.8.8
 
 EXPOSE 7080
 
-CMD ss-server -s $SERVER_ADDR \
+CMD sslocal -s $SERVER_ADDR \
               -p $SERVER_PORT \
 			  -b $LOCAL_ADDR \
 			  -l $LOCAL_PORT \
