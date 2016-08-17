@@ -2,7 +2,7 @@ FROM       ubuntu:14.04
 MAINTAINER Akkz
 
 RUN apt-get update \
-    && apt-get install python-pip \
+    && apt-get install -y python-pip \
     && pip install shadowsocks 
    
 ENV SERVER_ADDR 0.0.0.0
