@@ -1,0 +1,10 @@
+fun_sslocal:
+  build: .
+  privileged: false
+  restart: always
+  ports:
+  - 7080:7080
+  environment:
+  - PASSWORD=*****
+  - SERVER_PORT=*****
+  - SERVER_ADDR=*****
